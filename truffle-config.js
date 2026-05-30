@@ -1,0 +1,25 @@
+module.exports = {
+  contracts_directory: "./blockchain/contracts",
+  migrations_directory: "./blockchain/migrations",
+  contracts_build_directory: "./blockchain/build/contracts",
+  networks: {
+    development: {
+      host: "127.0.0.1",
+      port: 7545,
+      network_id: "1337",
+    },
+    ganache: {
+      host: "127.0.0.1",
+      port: 7545,
+      network_id: "5777",
+    },
+  },
+  compilers: {
+    solc: {
+      version: "0.8.21",
+      settings: {
+        evmVersion: "paris",
+      },
+    },
+  },
+};
