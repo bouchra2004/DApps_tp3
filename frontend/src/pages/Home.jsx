@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowUpRight, BookOpenCheck } from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
 import { exercises } from '../data/exercises.js'
 
 export default function Home() {
@@ -7,10 +7,6 @@ export default function Home() {
     <div className="space-y-8">
       <section className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
         <div className="max-w-3xl">
-          <p className="mb-3 inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500 shadow-sm">
-            <BookOpenCheck size={14} />
-            Universite Moulay Ismail - M. OUALLA
-          </p>
           <h2 className="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">Sommaire interactif du TP3</h2>
           <p className="mt-3 text-base leading-7 text-slate-600">
             Selectionnez un exercice pour executer ses fonctions Solidity, suivre les blocs Ganache et visualiser la derniere transaction.
